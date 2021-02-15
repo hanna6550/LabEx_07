@@ -15,11 +15,15 @@ function startTime() {
     m = addZero(m);
     s = addZero(s);
     // Assign to the UI [p]
-    timerDemo.innerHTML = `${h} : ${addZero(m)} : ${addZero(s)} ${am_pm }`;
-    setTimeout(startTime, 500);
+    timerDemo.innerHTML =
+    `${h} : ${addZero(m)} : ${addZero(s)} ${am_pm }`;
+    //run the timer recursively 
+    // setTimeout(startTime, 500);
 }
+setInterval(startTime, 500);
 
 function addZero(i) {
-    if (i < 10) { i = "0" + i } // add zero in front of numbers < 10
-    return i;
+    // add zero in front of numbers < 10
+    if (i < 10) { i = "0" + i }    
+        return i;
 }

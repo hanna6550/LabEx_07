@@ -34,24 +34,35 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item ">
             <img  id="img" class="d-block w-100" alt="imgesLP">
           </div>
-          <div class="carousel-item">
-            <img  id="img" class="d-block w-100" alt="imgesLP ">
+          <div class="carousel-item active">
+            <img  id="img2" class="d-block w-100" alt="imgesLP ">
           </div>
           <div class="carousel-item">
-            <img  id="img" class="d-block w-100" alt="imgesLP ">
+            <img  id="img3" class="d-block w-100" alt="imgesLP ">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+
+        <div>
+          <a href="#carousel" class="carousel-control-prev" data-bs-target="#carouselExampleIndicators" type="button" role="button" data-bs-slide="prev">
+              <span class="fa fa-chevron-left fa-4x text-dark" ></span>
+          </a>
+          
+          <a href="#carousel" class="carousel-control-next" data-bs-target="#carouselExampleIndicators" type="button" role="button" data-bs-slide="next">
+              <span class="fa fa-chevron-right fa-4x text-dark"></span>
+          </a>
+      
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
       </div>
 
 
@@ -71,11 +82,16 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
         // var height = document.getElementById('height').value
 
         var url = `https://picsum.photos/200/100`;
+        var url2 = `https://picsum.photos/seed/picsum/200/100`;
+        var url3 = `https://picsum.photos/200/100/?blur=2`;
+        
 
         var image = document.getElementById('img');
-        var image = document.getElementById('img');
-        var image = document.getElementById('img');
+        var image2 = document.getElementById('img2');
+        var image3 = document.getElementById('img3');
         image.src = url;
+        image2.src = url2;
+        image3.src = url3;
     // })
 </script>
 </html>
